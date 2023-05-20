@@ -1,4 +1,4 @@
-# Pytorch based Mitotic Cell Classification Project
+# Pytorch based Mitotic Cell Classification
 
 Specially developed for Mitotic Cell Classification
 
