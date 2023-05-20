@@ -1,0 +1,87 @@
+[2023-05-20 18:32:04,235 WARNING] USE GPU: 0 for training
+[2023-05-20 18:32:04,235 INFO] Namespace(batch_size=2, config='./configs/base.yaml', dataset={'name': 'BaseDataset', 'train_root': './tests/TestDataset', 'val_root': './tests/TestDataset', 'test_root': './tests/TestDataset', 'class_names': None, 'transforms': {'width': 224, 'height': 224}}, epoch=1, eval_batch_size=4, gpu=0, iter=1000, load_name=None, load_path=None, loss={'name': 'CrossEntropyLoss'}, model={'name': 'resnet18', 'pretrained': False, 'num_classes': 3}, num_eval_iter=100, num_workers=0, optimizer={'name': 'SGD', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0}, overwrite=False, resume=False, save_dir='./experiments/', save_name='base_experiment', save_path='./experiments/base_experiment', scheduler={'name': 'OneCycleLR', 'num_warmup_steps': 0}, seed=1)
+[2023-05-20 18:32:07,767 INFO] 
+ Evaluation!!!
+[2023-05-20 18:33:44,586 INFO] 
+ 100 iteration, {'train/loss': 0.36467045545578003, 'lr': 0.09782615863374095, 'train/prefetch_time': 0.01057692813873291, 'train/run_time': 0.004406400203704834, 'precision/0': 1.0, 'recall/0': 1.0, 'precision/1': 1.0, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(1., device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:33:45,430 INFO]  100 iteration, ACC: 1.0
+
+[2023-05-20 18:33:46,030 INFO] model saved: ./experiments/base_experiment/model_best.pth
+
+[2023-05-20 18:34:16,115 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:22,020 INFO] 
+ 200 iteration, {'train/loss': 1.0754975080490112, 'lr': 0.09091093459489592, 'train/prefetch_time': 0.010373056411743164, 'train/run_time': 0.004388256072998047, 'precision/0': 0.5, 'recall/0': 0.5, 'precision/1': 0.6666666666666666, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 0.5, 'eval/Acc': tensor(0.6667, device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:22,020 INFO]  200 iteration, ACC: 0.6666666865348816
+
+[2023-05-20 18:34:23,797 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:23,823 INFO] 
+ 300 iteration, {'train/loss': 2.273183822631836, 'lr': 0.07993083884966061, 'train/prefetch_time': 0.010863776206970216, 'train/run_time': 0.004417759895324707, 'precision/0': 1.0, 'recall/0': 0.5, 'precision/1': 0.6666666666666666, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(0.8333, device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:23,823 INFO]  300 iteration, ACC: 0.8333333730697632
+
+[2023-05-20 18:34:25,401 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:25,428 INFO] 
+ 400 iteration, {'train/loss': 0.5270914435386658, 'lr': 0.06597684864325495, 'train/prefetch_time': 0.009173664093017578, 'train/run_time': 0.004679103851318359, 'precision/0': 1.0, 'recall/0': 0.5, 'precision/1': 0.5, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 0.5, 'eval/Acc': tensor(0.6667, device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:25,428 INFO]  400 iteration, ACC: 0.6666666865348816
+
+[2023-05-20 18:34:26,985 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:27,011 INFO] 
+ 500 iteration, {'train/loss': 0.1020035669207573, 'lr': 0.0504354260019155, 'train/prefetch_time': 0.010490592002868653, 'train/run_time': 0.004508063793182373, 'precision/0': 1.0, 'recall/0': 0.5, 'precision/1': 0.6666666666666666, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(0.8333, device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:27,011 INFO]  500 iteration, ACC: 0.8333333730697632
+
+[2023-05-20 18:34:28,597 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:28,624 INFO] 
+ 600 iteration, {'train/loss': 0.787973165512085, 'lr': 0.03485075950591076, 'train/prefetch_time': 0.012385408401489257, 'train/run_time': 0.0043719358444213865, 'precision/0': 1.0, 'recall/0': 1.0, 'precision/1': 1.0, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(1., device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:28,624 INFO]  600 iteration, ACC: 1.0
+
+[2023-05-20 18:34:30,282 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:30,308 INFO] 
+ 700 iteration, {'train/loss': 0.014426667243242264, 'lr': 0.020771334424948946, 'train/prefetch_time': 0.01041708755493164, 'train/run_time': 0.0042962880134582515, 'precision/0': 1.0, 'recall/0': 0.5, 'precision/1': 0.6666666666666666, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(0.8333, device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:30,308 INFO]  700 iteration, ACC: 0.8333333730697632
+
+[2023-05-20 18:34:31,863 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:31,889 INFO] 
+ 800 iteration, {'train/loss': 0.08495974540710449, 'lr': 0.009596075936506196, 'train/prefetch_time': 0.011672320365905762, 'train/run_time': 0.004561952114105225, 'precision/0': 1.0, 'recall/0': 1.0, 'precision/1': 1.0, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(1., device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:31,890 INFO]  800 iteration, ACC: 1.0
+
+[2023-05-20 18:34:33,447 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:33,473 INFO] 
+ 900 iteration, {'train/loss': 0.010342417284846306, 'lr': 0.0024353525658872316, 'train/prefetch_time': 0.01180940818786621, 'train/run_time': 0.004495903968811035, 'precision/0': 1.0, 'recall/0': 0.5, 'precision/1': 0.6666666666666666, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(0.8333, device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:33,473 INFO]  900 iteration, ACC: 0.8333333730697632
+
+[2023-05-20 18:34:35,094 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:35,120 INFO] 
+ 1000 iteration, {'train/loss': 0.6869632601737976, 'lr': 6.504820583112039e-07, 'train/prefetch_time': 0.009191840171813966, 'train/run_time': 0.004344704151153564, 'precision/0': 1.0, 'recall/0': 1.0, 'precision/1': 1.0, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(1., device='cuda:0')}, 
+ BEST_EVAL_ACC: 1.0, at 100 iters
+[2023-05-20 18:34:35,120 INFO]  1000 iteration, ACC: 1.0
+
+[2023-05-20 18:34:35,121 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:35,187 INFO] model loaded from ./experiments/base_experiment/model_best.pth
+[2023-05-20 18:34:35,187 INFO] 
+ Evaluation!!!
+[2023-05-20 18:34:35,214 INFO] Test Results : {'precision/0': 1.0, 'recall/0': 1.0, 'precision/1': 1.0, 'recall/1': 1.0, 'precision/2': 1.0, 'recall/2': 1.0, 'eval/Acc': tensor(1., device='cuda:0')}
+[2023-05-20 19:07:55,882 WARNING] USE GPU: 0 for training
+[2023-05-20 19:07:55,882 INFO] Namespace(batch_size=2, config='./configs/base.yaml', dataset={'name': 'BaseDataset', 'train_root': './tests/TestDataset', 'val_root': './tests/TestDataset', 'test_root': './tests/TestDataset', 'class_names': None, 'transforms': {'width': 224, 'height': 224}}, epoch=1, eval_batch_size=4, gpu=0, iter=1000, load_name=None, load_path=None, loss={'name': 'CrossEntropyLoss'}, model={'name': 'resnet18', 'pretrained': False, 'num_classes': 3}, num_eval_iter=100, num_workers=0, optimizer={'name': 'SGD', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0}, overwrite=False, resume=False, save_dir='./experiments/', save_name='base_experiment', save_path='./experiments/base_experiment_test', scheduler={'name': 'OneCycleLR', 'num_warmup_steps': 0}, seed=1, task='test')
+[2023-05-20 19:08:17,866 WARNING] USE GPU: 0 for training
+[2023-05-20 19:08:17,866 INFO] Namespace(batch_size=2, config='./configs/base.yaml', dataset={'name': 'BaseDataset', 'train_root': './tests/TestDataset', 'val_root': './tests/TestDataset', 'test_root': './tests/TestDataset', 'class_names': None, 'transforms': {'width': 224, 'height': 224}}, epoch=1, eval_batch_size=4, gpu=0, iter=1000, load_name=None, load_path=None, loss={'name': 'CrossEntropyLoss'}, model={'name': 'resnet18', 'pretrained': False, 'num_classes': 3}, num_eval_iter=100, num_workers=0, optimizer={'name': 'SGD', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0}, overwrite=False, resume=False, save_dir='./experiments/', save_name='base_experiment', save_path='./experiments/base_experiment_test', scheduler={'name': 'OneCycleLR', 'num_warmup_steps': 0}, seed=1, task='test')
+[2023-05-20 19:09:43,020 WARNING] USE GPU: 0 for training
+[2023-05-20 19:09:43,020 INFO] Namespace(batch_size=2, config='./configs/base.yaml', dataset={'name': 'BaseDataset', 'train_root': './tests/TestDataset', 'val_root': './tests/TestDataset', 'test_root': './tests/TestDataset', 'class_names': None, 'transforms': {'width': 224, 'height': 224}}, epoch=1, eval_batch_size=4, gpu=0, iter=1000, load_name=None, load_path=None, loss={'name': 'CrossEntropyLoss'}, model={'name': 'resnet18', 'pretrained': False, 'num_classes': 3}, num_eval_iter=100, num_workers=0, optimizer={'name': 'SGD', 'lr': 0.1, 'momentum': 0.9, 'weight_decay': 0.0}, overwrite=False, resume=False, save_dir='./experiments/', save_name='base_experiment', save_path='./experiments/base_experiment_test', scheduler={'name': 'OneCycleLR', 'num_warmup_steps': 0}, seed=1, task='test')
+[2023-05-20 19:09:43,021 INFO] Task : test

@@ -1,0 +1,59 @@
+seed: 1
+
+# experiment save dirs
+save_dir: ./experiments/
+save_name: base_experiment
+
+# experiment settings
+overwrite: False
+resume: False
+load_path: ~
+load_name: ~
+
+# training parameters
+iter: 1000
+epoch: 1
+num_eval_iter: 100
+
+batch_size: 2
+eval_batch_size: 4
+num_workers: 0
+
+
+# using timm.models and torchvision.models
+# import model class based on model.name
+model:
+  name: resnet18
+  weights: ~
+  num_classes: 3
+
+# optimizer parameters
+optimizer:
+  name: SGD
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0
+
+# scheduler parameters
+scheduler:
+  name: OneCycleLR
+  num_warmup_steps: 0
+
+# loss function parameters
+loss:
+  name: CrossEntropyLoss
+
+# dataset parameters
+dataset:
+  name: BaseDataset
+  train_root: ./tests/TestDataset
+  val_root: ./tests/TestDataset
+  test_root: ./tests/TestDataset
+  class_names: ~
+
+  transforms:
+    width: 224
+    height: 224
+
+# device id
+gpu: 0
