@@ -27,7 +27,20 @@ def getModel(model_arguments: dict) -> nn.Module:
     model_name = model_arguments["name"]
     model_class = getattr(Models, model_name)
     model_arguments.pop("name")
-    return model_class(**model_arguments)
+
+    w = model_arguments.pop("weights", False)
+    if w:
+        base_model: nn.Module = model_class(**{"weights": w})
+        model_arguments["weights"] = None
+        model: nn.Module = model_class(**model_arguments)
+
+        pretrain_dict = base_model.state_dict()
+        model_dict = model.state_dict()
+        new_state_dict = {k: v if v.size() == model_dict[k].size() else model_dict[k] for k, v in zip(model_dict.keys(), pretrain_dict.values())}
+        model.load_state_dict(new_state_dict, strict=False)
+    else:
+        model = model_class(**model_arguments)
+    return model
 
 
 def getOptimizer(optimizer_arguments: dict, model: nn.Module) -> torch.optim.Optimizer:
